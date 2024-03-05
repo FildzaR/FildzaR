@@ -1,5 +1,5 @@
 ### Hi there 👋
-My simple web portfolio
+📫 How to reach me: chikarasyika77@gmail.com
 <!--
 **FildzaR/FildzaR** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
