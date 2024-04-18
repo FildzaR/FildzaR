@@ -1,6 +1,6 @@
 $(function () 
 {
-    const namaRegex = new RegExp('^[A-Z][a-zA-Z]{2,}( [A-Z][a-zA-Z]*)*$');
+    const namaRegex = new RegExp('^[A-Z][a-zA-Z.-]{0,}( [A-Z][a-zA-Z.-]*)*$');
     const notelpRegex = /^\+(?:[0-9] ?){6,14}[0-9]$/;
     const passwordRegex = new RegExp('^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{8,}$');
     const noktpRegex = new RegExp('^[0-9]{16}$');
@@ -28,7 +28,7 @@ $(function ()
                     $(this).removeClass('focus:ring-indigo-400 focus:border-indigo-300 focus:ring-green-500 focus:border-green-300')
                     $(this).addClass('focus:ring-red-500 focus:border-red-300')
 
-                    pElement.html('Nama Invalid ❌')
+                    pElement.html('Nama Invalid, gunakan huruf kapital di setiap awal kata cth : John Doe')
                     pElement.removeClass('text-green-700')
                     pElement.addClass('text-red-700')
                 }
@@ -49,7 +49,7 @@ $(function ()
                     $(this).removeClass('focus:ring-indigo-400 focus:border-indigo-300 focus:ring-green-500 focus:border-green-300')
                     $(this).addClass('focus:ring-red-500 focus:border-red-300')
 
-                    pElement.html('Nomor telepon Invalid ❌ gunakan kode negara cth : +6281234567890')
+                    pElement.html('Nomor telepon Invalid, gunakan kode negara cth : +6281234567890')
                     pElement.removeClass('text-green-700')
                     pElement.addClass('text-red-700')
                 }
@@ -70,7 +70,7 @@ $(function ()
                     $(this).removeClass('focus:ring-indigo-400 focus:border-indigo-300 focus:ring-green-500 focus:border-green-300')
                     $(this).addClass('focus:ring-red-500 focus:border-red-300')
 
-                    pElement.html('Password Invalid ❌ gunakan minimal 1 uppercase, 1 angka, dan 8 karakter')
+                    pElement.html('Password Invalid, gunakan minimal 1 uppercase, 1 angka, dan 8 karakter')
                     pElement.removeClass('text-green-700')
                     pElement.addClass('text-red-700')
                 }
@@ -91,7 +91,7 @@ $(function ()
                     $(this).removeClass('focus:ring-indigo-400 focus:border-indigo-300 focus:ring-green-500 focus:border-green-300')
                     $(this).addClass('focus:ring-red-500 focus:border-red-300')
 
-                    pElement.html('Nomor KTP Invalid ❌')
+                    pElement.html('Nomor KTP Invalid, gunakan format angka 16 digit')
                     pElement.removeClass('text-green-700')
                     pElement.addClass('text-red-700')
                 }
@@ -112,7 +112,7 @@ $(function ()
                     $(this).removeClass('focus:ring-indigo-400 focus:border-indigo-300 focus:ring-green-500 focus:border-green-300')
                     $(this).addClass('focus:ring-red-500 focus:border-red-300')
 
-                    pElement.html('Umur Invalid ❌ gunakan format angka maks 3 digit dan lebih kecil dari 110')
+                    pElement.html('Umur Invalid, gunakan format angka maks 3 digit dan lebih kecil dari 110')
                     pElement.removeClass('text-green-700')
                     pElement.addClass('text-red-700')
                 }
